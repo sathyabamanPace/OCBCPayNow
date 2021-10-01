@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8473A66C270708BF005761B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A66B270708BF005761B2 /* AppDelegate.swift */; };
+		8473A66E270708BF005761B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A66D270708BF005761B2 /* SceneDelegate.swift */; };
+		8473A670270708BF005761B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A66F270708BF005761B2 /* ViewController.swift */; };
+		8473A673270708BF005761B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8473A671270708BF005761B2 /* Main.storyboard */; };
+		8473A675270708C0005761B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8473A674270708C0005761B2 /* Assets.xcassets */; };
+		8473A678270708C0005761B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8473A676270708C0005761B2 /* LaunchScreen.storyboard */; };
+		8473A683270708C0005761B2 /* OCBCPayNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A682270708C0005761B2 /* OCBCPayNowTests.swift */; };
+		8473A68D270708C0005761B2 /* OCBCPayNowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A68C270708C0005761B2 /* OCBCPayNowUITests.swift */; };
+		8473A68F270708C0005761B2 /* OCBCPayNowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A68E270708C0005761B2 /* OCBCPayNowUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8473A67F270708C0005761B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8473A660270708BF005761B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8473A667270708BF005761B2;
+			remoteInfo = OCBCPayNow;
+		};
+		8473A689270708C0005761B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8473A660270708BF005761B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8473A667270708BF005761B2;
+			remoteInfo = OCBCPayNow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8473A668270708BF005761B2 /* OCBCPayNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCBCPayNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8473A66B270708BF005761B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8473A66D270708BF005761B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8473A66F270708BF005761B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8473A672270708BF005761B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8473A674270708C0005761B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8473A677270708C0005761B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8473A679270708C0005761B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8473A67E270708C0005761B2 /* OCBCPayNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCBCPayNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8473A682270708C0005761B2 /* OCBCPayNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCBCPayNowTests.swift; sourceTree = "<group>"; };
+		8473A688270708C0005761B2 /* OCBCPayNowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCBCPayNowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8473A68C270708C0005761B2 /* OCBCPayNowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCBCPayNowUITests.swift; sourceTree = "<group>"; };
+		8473A68E270708C0005761B2 /* OCBCPayNowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCBCPayNowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8473A665270708BF005761B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8473A67B270708C0005761B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8473A685270708C0005761B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8473A65F270708BF005761B2 = {
+			isa = PBXGroup;
+			children = (
+				8473A66A270708BF005761B2 /* OCBCPayNow */,
+				8473A681270708C0005761B2 /* OCBCPayNowTests */,
+				8473A68B270708C0005761B2 /* OCBCPayNowUITests */,
+				8473A669270708BF005761B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8473A669270708BF005761B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8473A668270708BF005761B2 /* OCBCPayNow.app */,
+				8473A67E270708C0005761B2 /* OCBCPayNowTests.xctest */,
+				8473A688270708C0005761B2 /* OCBCPayNowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8473A66A270708BF005761B2 /* OCBCPayNow */ = {
+			isa = PBXGroup;
+			children = (
+				8473A66B270708BF005761B2 /* AppDelegate.swift */,
+				8473A66D270708BF005761B2 /* SceneDelegate.swift */,
+				8473A66F270708BF005761B2 /* ViewController.swift */,
+				8473A671270708BF005761B2 /* Main.storyboard */,
+				8473A674270708C0005761B2 /* Assets.xcassets */,
+				8473A676270708C0005761B2 /* LaunchScreen.storyboard */,
+				8473A679270708C0005761B2 /* Info.plist */,
+			);
+			path = OCBCPayNow;
+			sourceTree = "<group>";
+		};
+		8473A681270708C0005761B2 /* OCBCPayNowTests */ = {
+			isa = PBXGroup;
+			children = (
+				8473A682270708C0005761B2 /* OCBCPayNowTests.swift */,
+			);
+			path = OCBCPayNowTests;
+			sourceTree = "<group>";
+		};
+		8473A68B270708C0005761B2 /* OCBCPayNowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8473A68C270708C0005761B2 /* OCBCPayNowUITests.swift */,
+				8473A68E270708C0005761B2 /* OCBCPayNowUITestsLaunchTests.swift */,
+			);
+			path = OCBCPayNowUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8473A667270708BF005761B2 /* OCBCPayNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8473A692270708C0005761B2 /* Build configuration list for PBXNativeTarget "OCBCPayNow" */;
+			buildPhases = (
+				8473A664270708BF005761B2 /* Sources */,
+				8473A665270708BF005761B2 /* Frameworks */,
+				8473A666270708BF005761B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCBCPayNow;
+			productName = OCBCPayNow;
+			productReference = 8473A668270708BF005761B2 /* OCBCPayNow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8473A67D270708C0005761B2 /* OCBCPayNowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8473A695270708C0005761B2 /* Build configuration list for PBXNativeTarget "OCBCPayNowTests" */;
+			buildPhases = (
+				8473A67A270708C0005761B2 /* Sources */,
+				8473A67B270708C0005761B2 /* Frameworks */,
+				8473A67C270708C0005761B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8473A680270708C0005761B2 /* PBXTargetDependency */,
+			);
+			name = OCBCPayNowTests;
+			productName = OCBCPayNowTests;
+			productReference = 8473A67E270708C0005761B2 /* OCBCPayNowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8473A687270708C0005761B2 /* OCBCPayNowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8473A698270708C0005761B2 /* Build configuration list for PBXNativeTarget "OCBCPayNowUITests" */;
+			buildPhases = (
+				8473A684270708C0005761B2 /* Sources */,
+				8473A685270708C0005761B2 /* Frameworks */,
+				8473A686270708C0005761B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8473A68A270708C0005761B2 /* PBXTargetDependency */,
+			);
+			name = OCBCPayNowUITests;
+			productName = OCBCPayNowUITests;
+			productReference = 8473A688270708C0005761B2 /* OCBCPayNowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8473A660270708BF005761B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					8473A667270708BF005761B2 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					8473A67D270708C0005761B2 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 8473A667270708BF005761B2;
+					};
+					8473A687270708C0005761B2 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 8473A667270708BF005761B2;
+					};
+				};
+			};
+			buildConfigurationList = 8473A663270708BF005761B2 /* Build configuration list for PBXProject "OCBCPayNow" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8473A65F270708BF005761B2;
+			productRefGroup = 8473A669270708BF005761B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8473A667270708BF005761B2 /* OCBCPayNow */,
+				8473A67D270708C0005761B2 /* OCBCPayNowTests */,
+				8473A687270708C0005761B2 /* OCBCPayNowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8473A666270708BF005761B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8473A678270708C0005761B2 /* LaunchScreen.storyboard in Resources */,
+				8473A675270708C0005761B2 /* Assets.xcassets in Resources */,
+				8473A673270708BF005761B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8473A67C270708C0005761B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8473A686270708C0005761B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8473A664270708BF005761B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8473A670270708BF005761B2 /* ViewController.swift in Sources */,
+				8473A66C270708BF005761B2 /* AppDelegate.swift in Sources */,
+				8473A66E270708BF005761B2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8473A67A270708C0005761B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8473A683270708C0005761B2 /* OCBCPayNowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8473A684270708C0005761B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8473A68D270708C0005761B2 /* OCBCPayNowUITests.swift in Sources */,
+				8473A68F270708C0005761B2 /* OCBCPayNowUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8473A680270708C0005761B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8473A667270708BF005761B2 /* OCBCPayNow */;
+			targetProxy = 8473A67F270708C0005761B2 /* PBXContainerItemProxy */;
+		};
+		8473A68A270708C0005761B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8473A667270708BF005761B2 /* OCBCPayNow */;
+			targetProxy = 8473A689270708C0005761B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8473A671270708BF005761B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8473A672270708BF005761B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8473A676270708C0005761B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8473A677270708C0005761B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8473A690270708C0005761B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8473A691270708C0005761B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8473A693270708C0005761B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FUJ6ZBJRJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OCBCPayNow/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pace.test.baman.OCBCPayNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8473A694270708C0005761B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FUJ6ZBJRJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OCBCPayNow/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pace.test.baman.OCBCPayNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8473A696270708C0005761B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FUJ6ZBJRJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pace.test.baman.OCBCPayNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCBCPayNow.app/OCBCPayNow";
+			};
+			name = Debug;
+		};
+		8473A697270708C0005761B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FUJ6ZBJRJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pace.test.baman.OCBCPayNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCBCPayNow.app/OCBCPayNow";
+			};
+			name = Release;
+		};
+		8473A699270708C0005761B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FUJ6ZBJRJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pace.test.baman.OCBCPayNowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OCBCPayNow;
+			};
+			name = Debug;
+		};
+		8473A69A270708C0005761B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FUJ6ZBJRJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pace.test.baman.OCBCPayNowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OCBCPayNow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8473A663270708BF005761B2 /* Build configuration list for PBXProject "OCBCPayNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8473A690270708C0005761B2 /* Debug */,
+				8473A691270708C0005761B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8473A692270708C0005761B2 /* Build configuration list for PBXNativeTarget "OCBCPayNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8473A693270708C0005761B2 /* Debug */,
+				8473A694270708C0005761B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8473A695270708C0005761B2 /* Build configuration list for PBXNativeTarget "OCBCPayNowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8473A696270708C0005761B2 /* Debug */,
+				8473A697270708C0005761B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8473A698270708C0005761B2 /* Build configuration list for PBXNativeTarget "OCBCPayNowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8473A699270708C0005761B2 /* Debug */,
+				8473A69A270708C0005761B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8473A660270708BF005761B2 /* Project object */;
+}
