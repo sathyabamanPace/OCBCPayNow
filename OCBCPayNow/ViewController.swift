@@ -150,7 +150,9 @@ class ViewController: UIViewController {
                 if let error = error {
                     print("DEBUG: failed to confirm otp: \(error)")
                 }
-                print("DEBUG: myInfo: \(result?.link ?? "")")
+                print("DEBUG: myInfo Link: \(result?.link ?? "")")
+                print("DEBUG: state: \(result?.state ?? "")")
+                print("DEBUG: redirectURL: \(result?.redirect_url ?? "")")
         })
     }
     
