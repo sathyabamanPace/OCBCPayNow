@@ -16,6 +16,9 @@
 		8473A683270708C0005761B2 /* OCBCPayNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A682270708C0005761B2 /* OCBCPayNowTests.swift */; };
 		8473A68D270708C0005761B2 /* OCBCPayNowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A68C270708C0005761B2 /* OCBCPayNowUITests.swift */; };
 		8473A68F270708C0005761B2 /* OCBCPayNowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A68E270708C0005761B2 /* OCBCPayNowUITestsLaunchTests.swift */; };
+		8473A69D27070C98005761B2 /* PaceNowBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8473A69B270708F6005761B2 /* PaceNowBank.framework */; platformFilter = ios; };
+		8473A69E27070C98005761B2 /* PaceNowBank.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8473A69B270708F6005761B2 /* PaceNowBank.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8473A6A327070D13005761B2 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A6A227070D13005761B2 /* extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8473A69F27070C99005761B2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8473A69E27070C98005761B2 /* PaceNowBank.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8473A668270708BF005761B2 /* OCBCPayNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCBCPayNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8473A66B270708BF005761B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +66,8 @@
 		8473A688270708C0005761B2 /* OCBCPayNowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCBCPayNowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8473A68C270708C0005761B2 /* OCBCPayNowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCBCPayNowUITests.swift; sourceTree = "<group>"; };
 		8473A68E270708C0005761B2 /* OCBCPayNowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCBCPayNowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8473A69B270708F6005761B2 /* PaceNowBank.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PaceNowBank.framework; sourceTree = "<group>"; };
+		8473A6A227070D13005761B2 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8473A69D27070C98005761B2 /* PaceNowBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +119,7 @@
 		8473A66A270708BF005761B2 /* OCBCPayNow */ = {
 			isa = PBXGroup;
 			children = (
+				8473A69B270708F6005761B2 /* PaceNowBank.framework */,
 				8473A66B270708BF005761B2 /* AppDelegate.swift */,
 				8473A66D270708BF005761B2 /* SceneDelegate.swift */,
 				8473A66F270708BF005761B2 /* ViewController.swift */,
@@ -106,6 +127,7 @@
 				8473A674270708C0005761B2 /* Assets.xcassets */,
 				8473A676270708C0005761B2 /* LaunchScreen.storyboard */,
 				8473A679270708C0005761B2 /* Info.plist */,
+				8473A6A227070D13005761B2 /* extension.swift */,
 			);
 			path = OCBCPayNow;
 			sourceTree = "<group>";
@@ -137,6 +159,7 @@
 				8473A664270708BF005761B2 /* Sources */,
 				8473A665270708BF005761B2 /* Frameworks */,
 				8473A666270708BF005761B2 /* Resources */,
+				8473A69F27070C99005761B2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +284,7 @@
 				8473A670270708BF005761B2 /* ViewController.swift in Sources */,
 				8473A66C270708BF005761B2 /* AppDelegate.swift in Sources */,
 				8473A66E270708BF005761B2 /* SceneDelegate.swift in Sources */,
+				8473A6A327070D13005761B2 /* extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,6 +464,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FUJ6ZBJRJY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCBCPayNow",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OCBCPayNow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -468,6 +496,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FUJ6ZBJRJY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCBCPayNow",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OCBCPayNow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

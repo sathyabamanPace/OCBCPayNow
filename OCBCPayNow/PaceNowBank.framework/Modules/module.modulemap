@@ -1,0 +1,11 @@
+framework module PaceNowBank {
+  umbrella header "PaceNowBank.h"
+
+  export *
+  module * { export * }
+}
+
+module PaceNowBank.Swift {
+    header "PaceNowBank-Swift.h"
+    requires objc
+}
