@@ -15,8 +15,8 @@ class MainVC: UIViewController {
     let paceOTPView = PaceOTPView()
     let storeView = PacePayNowView()
     
-    var email = "fimoye8384@ofenbuy.com"
-    var phone = "+6580001015"
+    var email = "yixaho9930@oemmeo.com"
+    var phone = "+6580001031"
     var requestToken: String = ""
     var onboardingToken: String = ""
     var myInfoURL: String = ""
@@ -65,24 +65,12 @@ class MainVC: UIViewController {
         view.addSubview(urlVerificationButton)
         urlVerificationButton.anchor(top: confirmButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16,  height: 50)
         
-      //  checkDecodeMockData()
+     
         
 //        ping()
 //        healthCheck()
         
 
-        var pairs = [GenericDatapairs]()
-        let pair1 = GenericDatapairs(key: "gind", value: "bugger")
-        let pair2 = GenericDatapairs(key: "nirock", value: "deunk")
-        let pair3 = GenericDatapairs(key: "sathya", value: "nice guy")
-        let pair4 = GenericDatapairs(key: "anjali", value: "biit")
-
-        pairs.append(pair1)
-        pairs.append(pair2)
-        pairs.append(pair3)
-        pairs.append(pair4)
-        setProcessApplication(userdata: pairs)
-        
     }
     
     override func viewDidLayoutSubviews() {
@@ -95,28 +83,6 @@ class MainVC: UIViewController {
             myInfoButton.anchor(top: urlVerificationButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16,  height: 50)
         }
     }
-    
-//    func checkDecodeMockData(){
-//        let data = getDataFromJsonFile(name: "verificationResults")
-//        do {
-//            let dictonary =  try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
-//            if let results = dictonary {
-//                for item in results["data"] as! [AnyObject]  {
-//                    if item["key"] as! String == "address" {
-//                        for address in item["value"] as! [AnyObject] {
-//                            print("\(address["key"]) : \(address["value"])")
-//                        }
-//                    } else {
-//                        print("\(item["key"]) : \(item["value"])")
-//                    }
-//                }
-//                print(" onboardingStatus: \(results["onboardingStatus"]!)")
-//                print(" idService: \(results["idService"]!)")
-//            }
-//        } catch let error as NSError {
-//            print(error)
-//        }
-//    }
     
     func getDataFromJsonFile(name: String, withExtension: String = "json") -> Data {
         let bundle = Bundle(for: type(of: self))
@@ -236,6 +202,7 @@ class MainVC: UIViewController {
     }
     
     func getMyInfoVerificationResults(){
+        let returnJson: NSMutableDictionary = NSMutableDictionary()
         paceAPi.kyc_getVerificationResult(onboardingToken: onboardingToken, completion: {
             result, error in
             if let error = error {
@@ -247,46 +214,42 @@ class MainVC: UIViewController {
             print("idService: \(result?.idService ?? "")")
             guard let userData = result?.data else { return }
             for item in userData {
-                print("\(item.key ?? "") : \(item.value ?? "")")
+                if item.key == "address" {
+                    if case let .valueElementArray(address_info) = item.value {
+                        for ad in address_info {
+                            print("\(ad.key) : \(ad.value)")
+                            returnJson.setValue(ad.value, forKey: ad.key)
+                        }
+                    }
+                }
+                
+                returnJson.setValue(item.value, forKey: item.key)
+                print(item.key)
+                print(item.value)
             }
-        
+            returnJson.setValue(self.onboardingToken, forKey: "onboardingToken")
+            returnJson.removeObject(forKey: "address")
+            print(returnJson)
+            
             self.getAccountDetails()
-            self.setProcessApplication(userdata: userData)
+            self.setProcessApplication(userdata: returnJson)
         })
+        
+        
     }
     
-    func setProcessApplication(userdata: [GenericDatapairs]){
-       
-        
-//        let value: [String] = userdata.flatMap({ $0.key})
-//        print(value)
-        
-        var userInfo =  [[String: String]]()
-        for info in userdata {
-            let data: [String: String] = [info.key ?? "" : info.value ?? ""]
-
-        }
-        
-        var json_string : String = ""
-        let encoder = JSONEncoder()
-        if let jsonData = try? encoder.encode(userdata) {
-            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                print(jsonString)
-            }
-        }
-        
+    func setProcessApplication(userdata: NSMutableDictionary){
  
-        
-        paceAPi.account_setProcessApplication(usersPersonalData: userInfo, completion: {
+        paceAPi.account_setProcessApplication(usersPersonalData: userdata, completion: {
             result, error in
-            
+
             if let error = error {
                 print("DEBUG: failed to setProcessApplication: \(error)")
                 return
             }
-            
+
             print("Application Status: \(result?.success ?? false)")
-            
+
           //  self.getAccountDetails()
         })
     }

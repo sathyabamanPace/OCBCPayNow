@@ -184,45 +184,22 @@ public class DemoPaceAPIManager {
         }
     }
     
-    public func kyc_getVerificationResult(onboardingToken: String, completion: @escaping (myInfoResponse?, Error?) -> Void){
+    public func kyc_getVerificationResult(onboardingToken: String, completion: @escaping (Welcome?, Error?) -> Void){
         let sgMyInforVerificationURL = "?locationId=SG&countryIsoCode=SGP&onboardingToken=\(onboardingToken)"
         service.getRequest(url: "\(baseURL)\(EndPoint.getVerificationResult.url)\(sgMyInforVerificationURL)") { result, error in
             if let error = error {
                 PacePrint.shared.printIdDebug("Unable to get user deatils for verification : \(error)")
                 completion(nil, error)
             }
-             
-            var userPersonalData : myInfoResponse = myInfoResponse(onboardingStatus: "", idService: "", data: [])
             
             do {
-                let dictonary =  try JSONSerialization.jsonObject(with: result!, options: []) as? [String:AnyObject]
-                var userInfoArray = [GenericDatapairs]()
-                if let results = dictonary {
-                    //Decode dictionary
-                    for item in results["data"] as! [AnyObject]  {
-                        if item["key"] as! String == "address" {
-                            for address in item["value"] as! [AnyObject] {
-                                let userinfo = GenericDatapairs(key: address["key"] as? String, value: address["value"] as? String )
-                                userInfoArray.append(userinfo)
-                            }
-                        } else {
-                            let userinfo = GenericDatapairs(key: item["key"] as? String, value: item["value"] as? String )
-                            userInfoArray.append(userinfo)
-                        }
-                    }
-                  
-                    //append items
-                    let userinfo = GenericDatapairs(key: "onboardingToken", value: onboardingToken )
-                    userInfoArray.append(userinfo)
-                    userPersonalData.onboardingStatus = results["onboardingStatus"] as? String
-                    userPersonalData.idService = results["idService"] as? String
-                    userPersonalData.data = userInfoArray
-                }
-                completion(userPersonalData, nil)
-                
-            } catch let error as NSError {
-                PacePrint.shared.printIdDebug("Unable to get user deatils for verification : \(error)")
-                completion(nil, error)
+                let json = try JSONDecoder().decode(Welcome.self, from: result!)
+                PacePrint.shared.printIdDebug("idService: \(json.idService )")
+                PacePrint.shared.printIdDebug("onboardingStatus: \(json.onboardingStatus )")
+                PacePrint.shared.printIdDebug("data: \(json.data)")
+                completion(json, nil)
+            } catch {
+                PacePrint.shared.printIdDebug("decode failure")
             }
         }
     }
@@ -263,13 +240,7 @@ public class DemoPaceAPIManager {
     }
     
     
-    public func account_setProcessApplication(usersPersonalData: [[String: String]], completion: @escaping (UserInfo?, Error?) -> Void){
-
-//        let encoder = JSONEncoder()
-//        if let jsonData = try? encoder.encode(userInfo) {
-//            if let jsonString = String(data: usersPersonalData, encoding: .utf8) {
-//            }
-//        }
+    public func account_setProcessApplication(usersPersonalData: NSMutableDictionary, completion: @escaping (UserInfo?, Error?) -> Void){
         
         let headers: HeaderValues = [ "X_PACE_DEVICEID": "Stimulator" ]
 

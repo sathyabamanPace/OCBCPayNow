@@ -91,17 +91,54 @@ public struct SystemAttributes: Codable {
 }
 
 
-//My Info Response
 
-public struct myInfoResponse: Codable {
-    public var onboardingStatus, idService: String?
-    public var data: [GenericDatapairs]?
+// MARK: - Welcome
+public struct Welcome: Codable {
+    public let data: [Datum]
+    public let onboardingStatus, idService: String
 }
 
-public struct GenericDatapairs: Codable {
-    public let key: String?
-    public let value: String?
+// MARK: - Datum
+public struct Datum: Codable {
+    public let key: String
+    public let value: ValueUnion
 }
+
+public enum ValueUnion: Codable {
+    case string(String)
+    case valueElementArray([ValueElement])
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        if let x = try? container.decode([ValueElement].self) {
+            self = .valueElementArray(x)
+            return
+        }
+        if let x = try? container.decode(String.self) {
+            self = .string(x)
+            return
+        }
+        throw DecodingError.typeMismatch(ValueUnion.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for ValueUnion"))
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        switch self {
+        case .string(let x):
+            try container.encode(x)
+        case .valueElementArray(let x):
+            try container.encode(x)
+        }
+    }
+}
+
+// MARK: - ValueElement
+public struct ValueElement: Codable {
+    let key, value: String
+}
+
+
+
 
 
 //Account Response
