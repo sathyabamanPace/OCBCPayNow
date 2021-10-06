@@ -1,0 +1,75 @@
+{
+    "data": [
+        {
+            "key": "mobileNumber",
+            "value": "+6582000005"
+        },
+        {
+            "key": "email",
+            "value": "qfmppddybsfeiiiazh@mrvpt.com"
+        },
+        {
+            "key": "name",
+            "value": "TAN HENG HUAT"
+        },
+        {
+            "key": "sex",
+            "value": "F"
+        },
+        {
+            "key": "dob",
+            "value": "1998-06-06"
+        },
+        {
+            "key": "nricFin",
+            "value": "S3100052A"
+        },
+        {
+            "key": "passType",
+            "value": ""
+        },
+        {
+            "key": "dateOfExpiry",
+            "value": ""
+        },
+        {
+            "key": "passStatus",
+            "value": ""
+        },
+        {
+            "key": "nationality",
+            "value": "SG"
+        },
+        {
+            "key": "address",
+            "value": [
+                {
+                    "key": "addr1",
+                    "value": "102 PEARL GARDEN #09-128 BEDOK NORTH AVENUE 4 SINGAPORE 460102"
+                },
+                {
+                    "key": "addr2",
+                    "value": ""
+                },
+                {
+                    "key": "postalCode",
+                    "value": "460102"
+                },
+                {
+                    "key": "city",
+                    "value": ""
+                },
+                {
+                    "key": "state",
+                    "value": ""
+                },
+                {
+                    "key": "region",
+                    "value": ""
+                }
+            ]
+        }
+    ],
+    "onboardingStatus": "for_approval",
+    "idService": "myinfo"
+}

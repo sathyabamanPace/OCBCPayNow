@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainVC.swift
 //  OCBCPayNow
 //
 //  Created by admin on 1/10/21.
@@ -8,16 +8,18 @@
 import UIKit
 import PaceNowBank
 
-class ViewController: UIViewController {
+class MainVC: UIViewController {
     
-    let paceAPi = PaceAPIManager()
+    let paceAPi = DemoPaceAPIManager()
+    
     let paceOTPView = PaceOTPView()
     let storeView = PacePayNowView()
     
-    var email = "yenih10554@ergowiki.com"
-    var phone = "+6580000098"
+    var email = "fimoye8384@ofenbuy.com"
+    var phone = "+6580001015"
     var requestToken: String = ""
     var onboardingToken: String = ""
+    var myInfoURL: String = ""
     
     let confirmButton: UIButton = {
        let btn = UIButton()
@@ -37,10 +39,19 @@ class ViewController: UIViewController {
         return btn
     }()
     
+    lazy var myInfoButton: UIButton = {
+       let btn = UIButton()
+        btn.backgroundColor = .red
+        btn.setTitle("Open Myinfo ", for: .normal)
+        btn.layer.cornerRadius = 5
+        btn.addTarget(self, action: #selector(openMyinfo), for: .touchUpInside)
+        return btn
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        view.backgroundColor = .systemGray5
         view.addSubview(storeView)
         storeView.delegate = self
         storeView.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, right: view.rightAnchor, height: 150)
@@ -54,14 +65,64 @@ class ViewController: UIViewController {
         view.addSubview(urlVerificationButton)
         urlVerificationButton.anchor(top: confirmButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16,  height: 50)
         
+      //  checkDecodeMockData()
         
-        ping()
-        healthCheck()
+//        ping()
+//        healthCheck()
+        
+
+        var pairs = [GenericDatapairs]()
+        let pair1 = GenericDatapairs(key: "gind", value: "bugger")
+        let pair2 = GenericDatapairs(key: "nirock", value: "deunk")
+        let pair3 = GenericDatapairs(key: "sathya", value: "nice guy")
+        let pair4 = GenericDatapairs(key: "anjali", value: "biit")
+
+        pairs.append(pair1)
+        pairs.append(pair2)
+        pairs.append(pair3)
+        pairs.append(pair4)
+        setProcessApplication(userdata: pairs)
         
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+    }
+    
+    func loadMyInfoButton(){
+        DispatchQueue.main.async { [self] in
+            view.addSubview(myInfoButton)
+            myInfoButton.anchor(top: urlVerificationButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16,  height: 50)
+        }
+    }
+    
+//    func checkDecodeMockData(){
+//        let data = getDataFromJsonFile(name: "verificationResults")
+//        do {
+//            let dictonary =  try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
+//            if let results = dictonary {
+//                for item in results["data"] as! [AnyObject]  {
+//                    if item["key"] as! String == "address" {
+//                        for address in item["value"] as! [AnyObject] {
+//                            print("\(address["key"]) : \(address["value"])")
+//                        }
+//                    } else {
+//                        print("\(item["key"]) : \(item["value"])")
+//                    }
+//                }
+//                print(" onboardingStatus: \(results["onboardingStatus"]!)")
+//                print(" idService: \(results["idService"]!)")
+//            }
+//        } catch let error as NSError {
+//            print(error)
+//        }
+//    }
+    
+    func getDataFromJsonFile(name: String, withExtension: String = "json") -> Data {
+        let bundle = Bundle(for: type(of: self))
+        let fileUrl = bundle.url(forResource: name, withExtension: withExtension)
+        let data = try! Data(contentsOf: fileUrl!)
+        return data
     }
     
     func ping(){
@@ -136,7 +197,14 @@ class ViewController: UIViewController {
                 print("DEBUG: failed to confirm otp: \(error)")
             }
             print("DEBUG: Email verified : \(result?.success ?? false)")
+            self.loadMyInfoButton()
         })
+    }
+    
+    @objc func openMyinfo(){
+        let vc = SingPassVC(url: myInfoURL)
+        vc.delegate = self
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     
@@ -148,20 +216,93 @@ class ViewController: UIViewController {
         paceAPi.kyc_getVerificationURL(onboardingToken: onboardingToken, completion: {
             result, error in
                 if let error = error {
-                    print("DEBUG: failed to confirm otp: \(error)")
+                    print("DEBUG: failed to getVerificationURL: \(error)")
                 }
-                print("DEBUG: myInfo Link: \(result?.link ?? "")")
-                print("DEBUG: state: \(result?.state ?? "")")
-                print("DEBUG: redirectURL: \(result?.redirect_url ?? "")")
+            
+            self.myInfoURL = result?.link ?? ""
         })
     }
     
+    func getAccountDetails(){
+        paceAPi.account_getAccountDetails(completion: {
+            result, error in
+            if let error = error {
+                print("DEBUG: failed to account_getAccountDetails: \(error)")
+            }
+            
+         //   print("result: \(result)")
+            
+        })
+    }
+    
+    func getMyInfoVerificationResults(){
+        paceAPi.kyc_getVerificationResult(onboardingToken: onboardingToken, completion: {
+            result, error in
+            if let error = error {
+                print("DEBUG: failed to getMyInfoVerificationResults: \(error)")
+                return
+            }
+            
+            print("onboardingStatus: \(result?.onboardingStatus ?? "")")
+            print("idService: \(result?.idService ?? "")")
+            guard let userData = result?.data else { return }
+            for item in userData {
+                print("\(item.key ?? "") : \(item.value ?? "")")
+            }
+        
+            self.getAccountDetails()
+            self.setProcessApplication(userdata: userData)
+        })
+    }
+    
+    func setProcessApplication(userdata: [GenericDatapairs]){
+       
+        
+//        let value: [String] = userdata.flatMap({ $0.key})
+//        print(value)
+        
+        var userInfo =  [[String: String]]()
+        for info in userdata {
+            let data: [String: String] = [info.key ?? "" : info.value ?? ""]
+
+        }
+        
+        var json_string : String = ""
+        let encoder = JSONEncoder()
+        if let jsonData = try? encoder.encode(userdata) {
+            if let jsonString = String(data: jsonData, encoding: .utf8) {
+                print(jsonString)
+            }
+        }
+        
+ 
+        
+        paceAPi.account_setProcessApplication(usersPersonalData: userInfo, completion: {
+            result, error in
+            
+            if let error = error {
+                print("DEBUG: failed to setProcessApplication: \(error)")
+                return
+            }
+            
+            print("Application Status: \(result?.success ?? false)")
+            
+          //  self.getAccountDetails()
+        })
+    }
     
 }
 
-extension ViewController: PacePayNowViewDelegate {
+extension MainVC: PacePayNowViewDelegate {
     func doPayNow() {
         self.callRequestPhoneOTP()
-        
+    }
+}
+
+
+extension MainVC: SingPassDelegate {
+    func loadMyInforequestResutApi() { [self]
+        getAccountDetails()
+        getMyInfoVerificationResults()
     }
 }
