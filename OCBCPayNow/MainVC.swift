@@ -14,8 +14,8 @@ class MainVC: UIViewController {
     let paceOTPView = PaceOTPView()
     let storeView = PacePayNowView()
     
-    var email = "fovor80072@ncdainfo.com"
-    var phone = "+6580001037"
+    var email = "welavo6037@mxgsby.com"
+    var phone = "+6580001038"
     var requestToken: String = ""
     var onboardingToken: String = ""
     var myInfoURL: String = ""
@@ -29,15 +29,6 @@ class MainVC: UIViewController {
         return btn
     }()
     
-    let urlVerificationButton: UIButton = {
-       let btn = UIButton()
-        btn.backgroundColor = .brown
-        btn.setTitle("Get Verification URL", for: .normal)
-        btn.layer.cornerRadius = 5
-        btn.addTarget(self, action: #selector(TempGetVerificationURL), for: .touchUpInside)
-        return btn
-    }()
-    
     lazy var myInfoButton: UIButton = {
        let btn = UIButton()
         btn.backgroundColor = .red
@@ -46,6 +37,14 @@ class MainVC: UIViewController {
         btn.addTarget(self, action: #selector(openMyinfo), for: .touchUpInside)
         return btn
     }()
+    
+    let discoverButton: UIButton = {
+        let btn = UIButton()
+        btn.backgroundColor = .systemOrange
+         btn.setTitle("Start Discover", for: .normal)
+         btn.addTarget(self, action: #selector(openDiscoverVC), for: .touchUpInside)
+         return btn
+     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,8 +60,8 @@ class MainVC: UIViewController {
         view.addSubview(confirmButton)
         confirmButton.anchor(top: paceOTPView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16, paddingLeft: 16, paddingRight: 16, height: 50)
         
-        view.addSubview(urlVerificationButton)
-        urlVerificationButton.anchor(top: confirmButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16, paddingLeft: 16, paddingRight: 16, height: 50)
+        view.addSubview(discoverButton)
+        discoverButton.anchor(left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, height: 80)
         
         ping()
         healthCheck()
@@ -72,7 +71,7 @@ class MainVC: UIViewController {
     func loadMyInfoButton(){
         DispatchQueue.main.async { [self] in
             view.addSubview(myInfoButton)
-            myInfoButton.anchor(top: urlVerificationButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16, paddingLeft: 16, paddingRight: 16, height: 50)
+            myInfoButton.anchor(top: confirmButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16, paddingLeft: 16, paddingRight: 16, height: 50)
         }
     }
     
@@ -154,7 +153,11 @@ class MainVC: UIViewController {
                 print("DEBUG: failed to confirm otp: \(error)")
             }
             print("DEBUG: Email verified : \(result?.success ?? false)")
-            self.loadMyInfoButton()
+            guard let emailVerification = result?.success else { return }
+            if emailVerification {
+                self.getVerificationURL()
+                self.loadMyInfoButton()
+            }
         })
     }
     
@@ -164,9 +167,9 @@ class MainVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    
-    @objc func TempGetVerificationURL(){
-        getVerificationURL()
+    @objc func openDiscoverVC(){
+        let vc = DiscoverVC(apiManager: paceAPi)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func getVerificationURL(){
