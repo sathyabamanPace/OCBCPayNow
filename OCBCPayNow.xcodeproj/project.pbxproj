@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11D193799A4DF4DE82FA888E /* Pods_OCBCPayNowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECED89EA89897EC46E865AD /* Pods_OCBCPayNowTests.framework */; };
 		843324DE270BE9F600A4C1BD /* SingPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843324DD270BE9F600A4C1BD /* SingPassVC.swift */; };
 		843AA282270D4A5200E44A0D /* verificationResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 843AA281270D4A5200E44A0D /* verificationResults.json */; };
 		8473A66C270708BF005761B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A66B270708BF005761B2 /* AppDelegate.swift */; };
@@ -21,6 +22,10 @@
 		8473A69E27070C98005761B2 /* PaceNowBank.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8473A69B270708F6005761B2 /* PaceNowBank.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8473A6A327070D13005761B2 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A6A227070D13005761B2 /* extension.swift */; };
 		84FE700C270EAAC8001DE5A9 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE700B270EAAC8001DE5A9 /* DiscoverVC.swift */; };
+		84FE7010270EC587001DE5A9 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE700F270EC587001DE5A9 /* CategoryHeaderView.swift */; };
+		84FE7012270EC5BE001DE5A9 /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE7011270EC5BE001DE5A9 /* StoreCell.swift */; };
+		BFFF8D4E8F7773EFE5D46B5C /* Pods_OCBCPayNow_OCBCPayNowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7A0BF3D14C72CA035C8122 /* Pods_OCBCPayNow_OCBCPayNowUITests.framework */; };
+		E74DF970D2431EDEA95F6D2F /* Pods_OCBCPayNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550CE0421E3D91ACEAD4A626 /* Pods_OCBCPayNow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A7A0BF3D14C72CA035C8122 /* Pods_OCBCPayNow_OCBCPayNowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCBCPayNow_OCBCPayNowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		432A33F2853B138D1C6D31B0 /* Pods-OCBCPayNow-OCBCPayNowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBCPayNow-OCBCPayNowUITests.release.xcconfig"; path = "Target Support Files/Pods-OCBCPayNow-OCBCPayNowUITests/Pods-OCBCPayNow-OCBCPayNowUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D7980C26E03B3B1A3C7F127 /* Pods-OCBCPayNow-OCBCPayNowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBCPayNow-OCBCPayNowUITests.debug.xcconfig"; path = "Target Support Files/Pods-OCBCPayNow-OCBCPayNowUITests/Pods-OCBCPayNow-OCBCPayNowUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		550CE0421E3D91ACEAD4A626 /* Pods_OCBCPayNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCBCPayNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		843324DD270BE9F600A4C1BD /* SingPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingPassVC.swift; sourceTree = "<group>"; };
 		843AA281270D4A5200E44A0D /* verificationResults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = verificationResults.json; path = OCBCPayNow/mockJson/verificationResults.json; sourceTree = SOURCE_ROOT; };
 		8473A668270708BF005761B2 /* OCBCPayNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCBCPayNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +81,13 @@
 		8473A69B270708F6005761B2 /* PaceNowBank.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PaceNowBank.framework; sourceTree = "<group>"; };
 		8473A6A227070D13005761B2 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		84FE700B270EAAC8001DE5A9 /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		84FE700F270EC587001DE5A9 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
+		84FE7011270EC5BE001DE5A9 /* StoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCell.swift; sourceTree = "<group>"; };
+		A0CFD58EC458421FC3F5A62F /* Pods-OCBCPayNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBCPayNow.release.xcconfig"; path = "Target Support Files/Pods-OCBCPayNow/Pods-OCBCPayNow.release.xcconfig"; sourceTree = "<group>"; };
+		A27C2AAD8A3A736DB803E650 /* Pods-OCBCPayNowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBCPayNowTests.debug.xcconfig"; path = "Target Support Files/Pods-OCBCPayNowTests/Pods-OCBCPayNowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD5A9E1A934E753865686BE9 /* Pods-OCBCPayNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBCPayNow.debug.xcconfig"; path = "Target Support Files/Pods-OCBCPayNow/Pods-OCBCPayNow.debug.xcconfig"; sourceTree = "<group>"; };
+		CECED89EA89897EC46E865AD /* Pods_OCBCPayNowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCBCPayNowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD609C6ACBE0FF28B8B74B1 /* Pods-OCBCPayNowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCBCPayNowTests.release.xcconfig"; path = "Target Support Files/Pods-OCBCPayNowTests/Pods-OCBCPayNowTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8473A69D27070C98005761B2 /* PaceNowBank.framework in Frameworks */,
+				E74DF970D2431EDEA95F6D2F /* Pods_OCBCPayNow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D193799A4DF4DE82FA888E /* Pods_OCBCPayNowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,12 +112,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFF8D4E8F7773EFE5D46B5C /* Pods_OCBCPayNow_OCBCPayNowUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A3DF505B7FD1DA9E294A798 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				550CE0421E3D91ACEAD4A626 /* Pods_OCBCPayNow.framework */,
+				3A7A0BF3D14C72CA035C8122 /* Pods_OCBCPayNow_OCBCPayNowUITests.framework */,
+				CECED89EA89897EC46E865AD /* Pods_OCBCPayNowTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		843AA27A270D47BC00E44A0D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +144,8 @@
 				8473A681270708C0005761B2 /* OCBCPayNowTests */,
 				8473A68B270708C0005761B2 /* OCBCPayNowUITests */,
 				8473A669270708BF005761B2 /* Products */,
+				EAE0A3AC6B64A29421BCCFBF /* Pods */,
+				7A3DF505B7FD1DA9E294A798 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,12 +162,12 @@
 		8473A66A270708BF005761B2 /* OCBCPayNow */ = {
 			isa = PBXGroup;
 			children = (
+				84FE700D270EC557001DE5A9 /* Discover */,
 				843AA27A270D47BC00E44A0D /* Demo */,
 				8473A69B270708F6005761B2 /* PaceNowBank.framework */,
 				8473A66B270708BF005761B2 /* AppDelegate.swift */,
 				8473A66D270708BF005761B2 /* SceneDelegate.swift */,
 				843324DD270BE9F600A4C1BD /* SingPassVC.swift */,
-				84FE700B270EAAC8001DE5A9 /* DiscoverVC.swift */,
 				8473A66F270708BF005761B2 /* MainVC.swift */,
 				8473A674270708C0005761B2 /* Assets.xcassets */,
 				8473A676270708C0005761B2 /* LaunchScreen.storyboard */,
@@ -163,6 +194,38 @@
 			path = OCBCPayNowUITests;
 			sourceTree = "<group>";
 		};
+		84FE700D270EC557001DE5A9 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				84FE700E270EC573001DE5A9 /* View */,
+				84FE700B270EAAC8001DE5A9 /* DiscoverVC.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		84FE700E270EC573001DE5A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84FE700F270EC587001DE5A9 /* CategoryHeaderView.swift */,
+				84FE7011270EC5BE001DE5A9 /* StoreCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAE0A3AC6B64A29421BCCFBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD5A9E1A934E753865686BE9 /* Pods-OCBCPayNow.debug.xcconfig */,
+				A0CFD58EC458421FC3F5A62F /* Pods-OCBCPayNow.release.xcconfig */,
+				4D7980C26E03B3B1A3C7F127 /* Pods-OCBCPayNow-OCBCPayNowUITests.debug.xcconfig */,
+				432A33F2853B138D1C6D31B0 /* Pods-OCBCPayNow-OCBCPayNowUITests.release.xcconfig */,
+				A27C2AAD8A3A736DB803E650 /* Pods-OCBCPayNowTests.debug.xcconfig */,
+				FDD609C6ACBE0FF28B8B74B1 /* Pods-OCBCPayNowTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,10 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8473A692270708C0005761B2 /* Build configuration list for PBXNativeTarget "OCBCPayNow" */;
 			buildPhases = (
+				31AAAAEC3D4AF8EE0AD92063 /* [CP] Check Pods Manifest.lock */,
 				8473A664270708BF005761B2 /* Sources */,
 				8473A665270708BF005761B2 /* Frameworks */,
 				8473A666270708BF005761B2 /* Resources */,
 				8473A69F27070C99005761B2 /* Embed Frameworks */,
+				BC9DDF54366AD0D177AC6E16 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +253,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8473A695270708C0005761B2 /* Build configuration list for PBXNativeTarget "OCBCPayNowTests" */;
 			buildPhases = (
+				28C4922F72A125BC853D7A9B /* [CP] Check Pods Manifest.lock */,
 				8473A67A270708C0005761B2 /* Sources */,
 				8473A67B270708C0005761B2 /* Frameworks */,
 				8473A67C270708C0005761B2 /* Resources */,
@@ -206,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8473A698270708C0005761B2 /* Build configuration list for PBXNativeTarget "OCBCPayNowUITests" */;
 			buildPhases = (
+				B81D31A069BD54D00BB0E611 /* [CP] Check Pods Manifest.lock */,
 				8473A684270708C0005761B2 /* Sources */,
 				8473A685270708C0005761B2 /* Frameworks */,
 				8473A686270708C0005761B2 /* Resources */,
+				F1DBA8FA363D162C9AC48CCB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,17 +358,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28C4922F72A125BC853D7A9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCBCPayNowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31AAAAEC3D4AF8EE0AD92063 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCBCPayNow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B81D31A069BD54D00BB0E611 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCBCPayNow-OCBCPayNowUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC9DDF54366AD0D177AC6E16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCBCPayNow/Pods-OCBCPayNow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCBCPayNow/Pods-OCBCPayNow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCBCPayNow/Pods-OCBCPayNow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1DBA8FA363D162C9AC48CCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCBCPayNow-OCBCPayNowUITests/Pods-OCBCPayNow-OCBCPayNowUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCBCPayNow-OCBCPayNowUITests/Pods-OCBCPayNow-OCBCPayNowUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCBCPayNow-OCBCPayNowUITests/Pods-OCBCPayNow-OCBCPayNowUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8473A664270708BF005761B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FE7010270EC587001DE5A9 /* CategoryHeaderView.swift in Sources */,
 				8473A670270708BF005761B2 /* MainVC.swift in Sources */,
 				8473A66C270708BF005761B2 /* AppDelegate.swift in Sources */,
 				843324DE270BE9F600A4C1BD /* SingPassVC.swift in Sources */,
 				8473A66E270708BF005761B2 /* SceneDelegate.swift in Sources */,
 				8473A6A327070D13005761B2 /* extension.swift in Sources */,
 				84FE700C270EAAC8001DE5A9 /* DiscoverVC.swift in Sources */,
+				84FE7012270EC5BE001DE5A9 /* StoreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +639,7 @@
 		};
 		8473A693270708C0005761B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD5A9E1A934E753865686BE9 /* Pods-OCBCPayNow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -497,6 +671,7 @@
 		};
 		8473A694270708C0005761B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0CFD58EC458421FC3F5A62F /* Pods-OCBCPayNow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -528,6 +703,7 @@
 		};
 		8473A696270708C0005761B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A27C2AAD8A3A736DB803E650 /* Pods-OCBCPayNowTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -553,6 +729,7 @@
 		};
 		8473A697270708C0005761B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDD609C6ACBE0FF28B8B74B1 /* Pods-OCBCPayNowTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -578,6 +755,7 @@
 		};
 		8473A699270708C0005761B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7980C26E03B3B1A3C7F127 /* Pods-OCBCPayNow-OCBCPayNowUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -601,6 +779,7 @@
 		};
 		8473A69A270708C0005761B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 432A33F2853B138D1C6D31B0 /* Pods-OCBCPayNow-OCBCPayNowUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

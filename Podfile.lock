@@ -1,0 +1,18 @@
+PODS:
+  - Cloudinary (2.10.1):
+    - Cloudinary/ios (= 2.10.1)
+  - Cloudinary/ios (2.10.1)
+
+DEPENDENCIES:
+  - Cloudinary (~> 2.0)
+
+SPEC REPOS:
+  trunk:
+    - Cloudinary
+
+SPEC CHECKSUMS:
+  Cloudinary: 064f057fe9b7d6268ed74de5590920e21de6db0d
+
+PODFILE CHECKSUM: 42dc1fc318ec31c5ec7284ae07025e2bda5338a9
+
+COCOAPODS: 1.11.2

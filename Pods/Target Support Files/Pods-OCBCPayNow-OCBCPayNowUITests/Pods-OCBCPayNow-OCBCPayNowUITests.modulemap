@@ -1,0 +1,6 @@
+framework module Pods_OCBCPayNow_OCBCPayNowUITests {
+  umbrella header "Pods-OCBCPayNow-OCBCPayNowUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

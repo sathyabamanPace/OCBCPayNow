@@ -14,8 +14,8 @@ class MainVC: UIViewController {
     let paceOTPView = PaceOTPView()
     let storeView = PacePayNowView()
     
-    var email = "welavo6037@mxgsby.com"
-    var phone = "+6580001038"
+    var email = "torevo6835@mxgsby.com"
+    var phone = "+6580001039"
     var requestToken: String = ""
     var onboardingToken: String = ""
     var myInfoURL: String = ""
