@@ -10,13 +10,12 @@ import PaceNowBank
 
 class MainVC: UIViewController {
     
-    let paceAPi = DemoPaceAPIManager()
-    
+    let paceAPi = PaceAPIManager()
     let paceOTPView = PaceOTPView()
     let storeView = PacePayNowView()
     
-    var email = "nonafix215@ncdainfo.com"
-    var phone = "+6580001035"
+    var email = "fovor80072@ncdainfo.com"
+    var phone = "+6580001037"
     var requestToken: String = ""
     var onboardingToken: String = ""
     var myInfoURL: String = ""
@@ -54,33 +53,26 @@ class MainVC: UIViewController {
         view.backgroundColor = .systemGray5
         view.addSubview(storeView)
         storeView.delegate = self
-        storeView.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, right: view.rightAnchor, height: 150)
+        storeView.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingLeft: 16, paddingRight: 16, height: 150)
         
         view.addSubview(paceOTPView)
-        paceOTPView.anchor(top: storeView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16,  height: 50)
+        paceOTPView.anchor(top: storeView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16, paddingLeft: 16, paddingRight: 16,  height: 50)
         
         view.addSubview(confirmButton)
-        confirmButton.anchor(top: paceOTPView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16,  height: 50)
+        confirmButton.anchor(top: paceOTPView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16, paddingLeft: 16, paddingRight: 16, height: 50)
         
         view.addSubview(urlVerificationButton)
-        urlVerificationButton.anchor(top: confirmButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16,  height: 50)
-        
-     
+        urlVerificationButton.anchor(top: confirmButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16, paddingLeft: 16, paddingRight: 16, height: 50)
         
         ping()
         healthCheck()
-        
-
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-    }
     
     func loadMyInfoButton(){
         DispatchQueue.main.async { [self] in
             view.addSubview(myInfoButton)
-            myInfoButton.anchor(top: urlVerificationButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16,  height: 50)
+            myInfoButton.anchor(top: urlVerificationButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16, paddingLeft: 16, paddingRight: 16, height: 50)
         }
     }
     
@@ -107,7 +99,6 @@ class MainVC: UIViewController {
             if let error = error {
                 print("DEBUG: trying to ping failed: \(error)")
             }
-            
             print("DEBUG: build_no : \(result?.attributes?.build_no ?? "")")
             print("DEBUG: environment : \(result?.attributes?.environment ?? "")")
             print("DEBUG: message : \(result?.attributes?.message ?? "")")
@@ -195,9 +186,6 @@ class MainVC: UIViewController {
             if let error = error {
                 print("DEBUG: failed to account_getAccountDetails: \(error)")
             }
-            
-         //   print("result: \(result)")
-            
         })
     }
     
@@ -222,7 +210,6 @@ class MainVC: UIViewController {
                         }
                     }
                 }
-                
                 returnJson.setValue("\(item.value)", forKey: "\(item.key )")
         
             }
@@ -233,8 +220,6 @@ class MainVC: UIViewController {
             self.getAccountDetails()
             self.setProcessApplication(userdata: returnJson)
         })
-        
-        
     }
     
     func setProcessApplication(userdata: NSMutableDictionary){
@@ -248,7 +233,6 @@ class MainVC: UIViewController {
             }
 
             print("Application Status: \(result?.success ?? false)")
-
             self.getAccountDetails()
         })
     }
@@ -263,8 +247,8 @@ extension MainVC: PacePayNowViewDelegate {
 
 
 extension MainVC: SingPassDelegate {
-    func loadMyInforequestResutApi() { [self]
-        getAccountDetails()
-        getMyInfoVerificationResults()
+    func loadMyInforequestResutApi() {
+        self.getAccountDetails()
+        self.getMyInfoVerificationResults()
     }
 }

@@ -22,27 +22,27 @@
 		</data>
 		<key>Modules/PaceNowBank.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		PYHyXRf5qwuTXcl+HFdRDy6FzzQ=
+		nXihSNYpxTUEI3JUbMGQurOGcg4=
 		</data>
 		<key>Modules/PaceNowBank.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		PYHyXRf5qwuTXcl+HFdRDy6FzzQ=
+		nXihSNYpxTUEI3JUbMGQurOGcg4=
 		</data>
 		<key>Modules/PaceNowBank.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		PqRyKyCzTrlLfQYjvbHIL4ia+nM=
+		6Pg9px5DYvr1CtbRvDdIG9dIL5U=
 		</data>
 		<key>Modules/PaceNowBank.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		crGrr7Te1Gzwltea3LINqvPvJNg=
+		9cvP2M/GzE9pO6y8Dfbeng5RGSQ=
 		</data>
 		<key>Modules/PaceNowBank.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		PqRyKyCzTrlLfQYjvbHIL4ia+nM=
+		6Pg9px5DYvr1CtbRvDdIG9dIL5U=
 		</data>
 		<key>Modules/PaceNowBank.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		crGrr7Te1Gzwltea3LINqvPvJNg=
+		9cvP2M/GzE9pO6y8Dfbeng5RGSQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -76,42 +76,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0BiVn5k1FITsni2dTsLXkzig5NZ/bM6dRtj2bg/oWIE=
+			fal0pqmcLf0HNHzDHEbJgQg/MG1ome/fbhc4XC0WgO0=
 			</data>
 		</dict>
 		<key>Modules/PaceNowBank.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0BiVn5k1FITsni2dTsLXkzig5NZ/bM6dRtj2bg/oWIE=
+			fal0pqmcLf0HNHzDHEbJgQg/MG1ome/fbhc4XC0WgO0=
 			</data>
 		</dict>
 		<key>Modules/PaceNowBank.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ff+kB7vL7FKQCF6iWy+Waj6oQgulMGu4oTVPIvAbCMA=
+			k9JYLVrwifOfblfVztET9Dc+bGV0aZc61MVq2tY4RKo=
 			</data>
 		</dict>
 		<key>Modules/PaceNowBank.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			59/pkfJ5/jEt+qZxqo1HaFt8lFyv+l8U+/HdKqrwISs=
+			cKcTpEkDyrCMdCTk9zeI19Elw7EqEnHQCkChNE8hEzo=
 			</data>
 		</dict>
 		<key>Modules/PaceNowBank.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ff+kB7vL7FKQCF6iWy+Waj6oQgulMGu4oTVPIvAbCMA=
+			k9JYLVrwifOfblfVztET9Dc+bGV0aZc61MVq2tY4RKo=
 			</data>
 		</dict>
 		<key>Modules/PaceNowBank.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			59/pkfJ5/jEt+qZxqo1HaFt8lFyv+l8U+/HdKqrwISs=
+			cKcTpEkDyrCMdCTk9zeI19Elw7EqEnHQCkChNE8hEzo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		843324DE270BE9F600A4C1BD /* SingPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843324DD270BE9F600A4C1BD /* SingPassVC.swift */; };
-		843AA27E270D47CE00E44A0D /* PaceAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AA27B270D47CE00E44A0D /* PaceAPIManager.swift */; };
-		843AA27F270D47CE00E44A0D /* PaceServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AA27C270D47CE00E44A0D /* PaceServiceManager.swift */; };
-		843AA280270D47CE00E44A0D /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AA27D270D47CE00E44A0D /* ServiceModel.swift */; };
 		843AA282270D4A5200E44A0D /* verificationResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 843AA281270D4A5200E44A0D /* verificationResults.json */; };
 		8473A66C270708BF005761B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A66B270708BF005761B2 /* AppDelegate.swift */; };
 		8473A66E270708BF005761B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473A66D270708BF005761B2 /* SceneDelegate.swift */; };
@@ -58,9 +55,6 @@
 
 /* Begin PBXFileReference section */
 		843324DD270BE9F600A4C1BD /* SingPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingPassVC.swift; sourceTree = "<group>"; };
-		843AA27B270D47CE00E44A0D /* PaceAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaceAPIManager.swift; sourceTree = "<group>"; };
-		843AA27C270D47CE00E44A0D /* PaceServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaceServiceManager.swift; sourceTree = "<group>"; };
-		843AA27D270D47CE00E44A0D /* ServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
 		843AA281270D4A5200E44A0D /* verificationResults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = verificationResults.json; path = OCBCPayNow/mockJson/verificationResults.json; sourceTree = SOURCE_ROOT; };
 		8473A668270708BF005761B2 /* OCBCPayNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCBCPayNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8473A66B270708BF005761B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,9 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				843AA281270D4A5200E44A0D /* verificationResults.json */,
-				843AA27B270D47CE00E44A0D /* PaceAPIManager.swift */,
-				843AA27C270D47CE00E44A0D /* PaceServiceManager.swift */,
-				843AA27D270D47CE00E44A0D /* ServiceModel.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -302,13 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8473A670270708BF005761B2 /* MainVC.swift in Sources */,
-				843AA27F270D47CE00E44A0D /* PaceServiceManager.swift in Sources */,
 				8473A66C270708BF005761B2 /* AppDelegate.swift in Sources */,
 				843324DE270BE9F600A4C1BD /* SingPassVC.swift in Sources */,
-				843AA27E270D47CE00E44A0D /* PaceAPIManager.swift in Sources */,
 				8473A66E270708BF005761B2 /* SceneDelegate.swift in Sources */,
 				8473A6A327070D13005761B2 /* extension.swift in Sources */,
-				843AA280270D47CE00E44A0D /* ServiceModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
