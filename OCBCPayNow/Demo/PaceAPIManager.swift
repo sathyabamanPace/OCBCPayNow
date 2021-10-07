@@ -244,7 +244,7 @@ public class DemoPaceAPIManager {
         
         let headers: HeaderValues = [ "X_PACE_DEVICEID": "Stimulator" ]
 
-        guard let requestBodyData = try? JSONEncoder().encode(usersPersonalData) else {  return }
+        guard let requestBodyData = try? JSONSerialization.data(withJSONObject: usersPersonalData, options: [JSONSerialization.WritingOptions.sortedKeys,JSONSerialization.WritingOptions.prettyPrinted]) else { return}
 
         service.submitPost(url: "\(baseURL)\(EndPoint.setProcessApplication.url)", data: requestBodyData, headers: headers) { result, error in
             if let error = error {

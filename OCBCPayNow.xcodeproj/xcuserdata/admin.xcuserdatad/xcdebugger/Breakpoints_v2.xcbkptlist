@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "78AD8E80-B7F3-4108-8932-4E1922140486"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OCBCPayNow/Demo/PaceAPIManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "265"
-            endingLineNumber = "265"
-            landmarkName = "DemoPaceAPIManager"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F29B2504-BAC9-4FCE-BF4A-E4A0B5E431C1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OCBCPayNow/Demo/PaceAPIManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
-            landmarkName = "account_setProcessApplication(usersPersonalData:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "40264281-F4AF-4B96-B99B-336E0E561F53"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OCBCPayNow/Demo/PaceAPIManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "256"
-            endingLineNumber = "256"
-            landmarkName = "account_setProcessApplication(usersPersonalData:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "C2E5B69E-1E3B-4589-97CD-51184231DD52"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -62,8 +14,8 @@
             filePath = "OCBCPayNow/MainVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "getMyInfoVerificationResults()"
             landmarkType = "7">
          </BreakpointContent>
@@ -71,15 +23,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "095E5D98-F205-41C3-B790-46369A62C594"
+            uuid = "A34ED3E4-CCB5-4204-99F7-8FE96ECD56B3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OCBCPayNow/MainVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "246"
-            endingLineNumber = "246"
+            startingLineNumber = "250"
+            endingLineNumber = "250"
             landmarkName = "setProcessApplication(userdata:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -87,16 +39,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D46C0383-78E9-42E7-87E5-C7A53F6EDB97"
+            uuid = "9D3BEF84-B9CF-47D2-B011-DCDFA36EC252"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OCBCPayNow/MainVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "243"
-            endingLineNumber = "243"
-            landmarkName = "setProcessApplication(userdata:)"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "getMyInfoVerificationResults()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

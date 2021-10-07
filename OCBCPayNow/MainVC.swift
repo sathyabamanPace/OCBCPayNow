@@ -15,8 +15,8 @@ class MainVC: UIViewController {
     let paceOTPView = PaceOTPView()
     let storeView = PacePayNowView()
     
-    var email = "yixaho9930@oemmeo.com"
-    var phone = "+6580001031"
+    var email = "nonafix215@ncdainfo.com"
+    var phone = "+6580001035"
     var requestToken: String = ""
     var onboardingToken: String = ""
     var myInfoURL: String = ""
@@ -67,8 +67,8 @@ class MainVC: UIViewController {
         
      
         
-//        ping()
-//        healthCheck()
+        ping()
+        healthCheck()
         
 
     }
@@ -203,6 +203,7 @@ class MainVC: UIViewController {
     
     func getMyInfoVerificationResults(){
         let returnJson: NSMutableDictionary = NSMutableDictionary()
+        
         paceAPi.kyc_getVerificationResult(onboardingToken: onboardingToken, completion: {
             result, error in
             if let error = error {
@@ -217,17 +218,15 @@ class MainVC: UIViewController {
                 if item.key == "address" {
                     if case let .valueElementArray(address_info) = item.value {
                         for ad in address_info {
-                            print("\(ad.key) : \(ad.value)")
-                            returnJson.setValue(ad.value, forKey: ad.key)
+                            returnJson.setValue("\(ad.value )", forKey: "\(ad.key )")
                         }
                     }
                 }
                 
-                returnJson.setValue(item.value, forKey: item.key)
-                print(item.key)
-                print(item.value)
+                returnJson.setValue("\(item.value)", forKey: "\(item.key )")
+        
             }
-            returnJson.setValue(self.onboardingToken, forKey: "onboardingToken")
+            returnJson.setValue("\(self.onboardingToken)", forKey: "onboardingToken")
             returnJson.removeObject(forKey: "address")
             print(returnJson)
             
@@ -250,7 +249,7 @@ class MainVC: UIViewController {
 
             print("Application Status: \(result?.success ?? false)")
 
-          //  self.getAccountDetails()
+            self.getAccountDetails()
         })
     }
     
